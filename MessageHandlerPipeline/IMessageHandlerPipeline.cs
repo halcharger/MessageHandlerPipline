@@ -1,8 +1,8 @@
 ﻿namespace MessageHandlerPipeline
 {
-    public interface IMessageHandlerPiepline<T>
+    public interface IMessageHandlerPipeline<T>
     {
-        MessageHandlerPipeline<T> Register(IMessageHandler<T> handler);
+        IMessageHandlerPipeline<T> Register(IMessageHandler<T> handler);
         void HandleMessage(T message);
     }
 }

@@ -2,17 +2,17 @@
 
 namespace MessageHandlerPipeline
 {
-    public class MessageHandlerPipeline<T>
+    public class MessageHandlerPipeline<T> : IMessageHandlerPipeline<T>
     {
-        private readonly List<IMessageHandler<T>> _handlers = new List<IMessageHandler<T>>();
+        protected readonly List<IMessageHandler<T>> _handlers = new List<IMessageHandler<T>>();
 
-        public MessageHandlerPipeline<T> Register(IMessageHandler<T> handler)
+        public virtual IMessageHandlerPipeline<T> Register(IMessageHandler<T> handler)
         {
             _handlers.Add(handler);
             return this;
         }
 
-        public void HandleMessage(T message)
+        public virtual void HandleMessage(T message)
         {
             _handlers.ForEach(h => h.Handle(message));
         }
