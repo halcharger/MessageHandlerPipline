@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicMessagePipelineTests.cs" />
     <Compile Include="FailingMessageHandler.cs" />
     <Compile Include="MessageHandlerThatStopsMessageHandling.cs" />
     <Compile Include="Program.cs" />
