@@ -1,6 +1,6 @@
 ﻿namespace MessageHandlerPipeline
 {
-    public class StoppablePipelineDecorator<T> : MessageHandlerPipeline<T> where T : IStoppableMessage
+    public class StoppableMessagePipeline<T> : MessageHandlerPipeline<T> where T : IStoppableMessage
     {
         public override void HandleMessage(T message)
         {

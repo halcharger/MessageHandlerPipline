@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.20617.1 PREVIEW
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageHandlerPipeline", "MessageHandlerPipeline\MessageHandlerPipeline.csproj", "{3296D2D6-1B97-4171-BE2A-830E7863E1F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{A1CAC886-24BB-416D-B1E4-934B4CC2A63C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3296D2D6-1B97-4171-BE2A-830E7863E1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3296D2D6-1B97-4171-BE2A-830E7863E1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3296D2D6-1B97-4171-BE2A-830E7863E1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CAC886-24BB-416D-B1E4-934B4CC2A63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CAC886-24BB-416D-B1E4-934B4CC2A63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CAC886-24BB-416D-B1E4-934B4CC2A63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CAC886-24BB-416D-B1E4-934B4CC2A63C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
